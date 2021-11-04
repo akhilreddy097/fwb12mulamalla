@@ -3,13 +3,14 @@ extends layout
 block content
   h1= title
   - let shirts = [{color:"blue",brand:"nike",cost:35.90},{color:"red",brand:"puma",cost:520.39},{color:"green",brand:"holister",cost:51.2}]
-    div(class="container-fluid mt-3")
+  div(class="container-fluid mt-3")
   div(class="row")
-    each tree,index in trees
-        div(class="col-sm-4" onclick=`buy(${index})`) #{tree.treeColor} - #{tree.age} - #{tree.name}
+    each shirt,index in shirt
+        div(class="col-sm-4" onclick=`buy(${index})`) #{shirt.color} - #{shirt.brand} - #{shirt.cost}
     script.
      
       function buy(itemNo)
       {
-        alert(`You selected Item ${itemNo+1}`)
+        alert(`You purchased Item ${itemNo+1}`)
       }
+
