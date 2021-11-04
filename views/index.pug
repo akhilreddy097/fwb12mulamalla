@@ -7,12 +7,11 @@ block content
   button(type='button', class="btn btn-secondary" onclick="update()") Press Me
    br
    br
-
-   div(id="target") Display 
-   script.
-    var client_count=0
-    function update(){
-     client_count++;
-     document.getElementById("target").innerHTML=`value now ${client_count}`
-     }
+  div(id="target") Display 
+  script.
+     var client_count=0
+     function update(){
+      client_count++;
+      document.getElementById("target").innerHTML=`value now ${client_count}`
+      }
     br
