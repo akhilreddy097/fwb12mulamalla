@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var shirtsRouter = require('./routes/shirt');
+var shirtRouter = require('./routes/shirt');
 var app = express();
 
 // view engine setup
